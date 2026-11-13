@@ -15,10 +15,6 @@ public class PeerEvaluationAverage {
     private List<String> privateComments;
     private List<RatingAverage> ratingAverages;
 
-
-    public PeerEvaluationAverage() {
-    }
-
     public Integer getStudentId() {
         return studentId;
     }

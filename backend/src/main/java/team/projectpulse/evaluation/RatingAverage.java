@@ -7,6 +7,7 @@ public class RatingAverage {
 
 
     public RatingAverage() {
+        // Fields are populated through setters.
     }
 
     public RatingAverage(Integer criterionId, Double averageScore) {

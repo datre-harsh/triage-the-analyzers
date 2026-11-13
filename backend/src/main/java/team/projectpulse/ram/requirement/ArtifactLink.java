@@ -49,10 +49,6 @@ public class ArtifactLink {
     @LastModifiedBy
     private PeerEvaluationUser updatedBy;
 
-
-    public ArtifactLink() {
-    }
-
     public Long getId() {
         return id;
     }
