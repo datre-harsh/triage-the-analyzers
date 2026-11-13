@@ -104,6 +104,8 @@ public class StudentService {
         return savedStudent;
     }
 
+    // MyUserPrincipal and the configured JWT converter create SimpleGrantedAuthority roles with non-null strings.
+    @SuppressWarnings("PMD.LiteralsFirstInComparisons")
     public Student updateStudent(Integer studentId, Student update) {
         Student oldStudent = this.studentRepository.findById(studentId)
                 .orElseThrow(() -> new ObjectNotFoundException("student", studentId));
