@@ -4,7 +4,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 import java.util.Locale;
 
-public class StudentSpecs {
+public final class StudentSpecs {
 
     private StudentSpecs() {
         // Utility class; use the static specifications.
