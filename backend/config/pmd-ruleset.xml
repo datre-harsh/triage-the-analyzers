@@ -12,6 +12,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
     <description>PMD quickstart, with Project Pulse's decisions.</description>
+    <!-- D2: Enforce both constructor rules. Document required JPA/bean constructors;
+         remove redundant explicit public constructors, which Java supplies implicitly. -->
+    <!-- D3: Enforce braces so the next statement added to a guard stays inside it. -->
+    <!-- D4: Enforce log guards. SLF4J defers formatting, but method arguments are
+         evaluated before the logging call, even when that level is disabled. -->
     <rule ref="rulesets/java/quickstart.xml">
     </rule>
 </ruleset>

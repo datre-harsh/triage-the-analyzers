@@ -34,10 +34,6 @@ public class Comment {
     @LastModifiedDate
     private Instant updatedAt;
 
-
-    public Comment() {
-    }
-
     public Long getId() {
         return id;
     }

@@ -7,4 +7,13 @@
 
      Unlike the baseline, this file may grow, but every entry is a reviewed decision. -->
 <FindBugsFilter>
+    <!-- D1: Project Pulse shares managed JPA associations and Spring beans by design.
+         Services mutate entity collections (for example TeamService.transferTeam and
+         UseCaseService.updateUseCase); defensive copies would change those operations.
+         DTOs are request/response data, not immutable value objects. Keep this rule
+         off for the application; review collection ownership when adding invariants. -->
+    <Match>
+        <Package name="~team\.projectpulse\..*"/>
+        <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+    </Match>
 </FindBugsFilter>

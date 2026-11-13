@@ -58,10 +58,6 @@ public class CommentThread {
     @LastModifiedBy
     private PeerEvaluationUser updatedBy;
 
-
-    public CommentThread() {
-    }
-
     public void addComment(Comment comment) {
         comment.setCommentThread(this);
         this.comments.add(comment);

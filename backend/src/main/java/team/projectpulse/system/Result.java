@@ -16,6 +16,7 @@ public class Result {
 
 
     public Result() {
+        // Fields are populated through setters.
     }
 
     public Result(boolean flag, Integer code, String message) {
